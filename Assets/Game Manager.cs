@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         GameObject handDisplay = GameObject.Find("hand");
-        handDisplay.AddComponent()
 
         List<Card> deck = new List<Card>();
         List<Card> hand = new List<Card>();
