@@ -15,12 +15,16 @@ public class Card : MonoBehaviour
 
     int attack;
     int defence;
+
+    void Awake() {
+
+    }
    
-    public Card(string cardName, int manaCost, string cardImage, string type, string keywords, string abilityText, int attack, int defence)
+    public Card(string cardName, int manaCost, string type, string keywords, string abilityText, int attack, int defence)
     {
         this.cardName = cardName;
         this.manaCost = manaCost;
-        this.cardImage = cardImage;
+        this.cardImage = cardName + ".jpg"; 
         this.type = type;
         this.keywords = keywords;
         this.abilityText = abilityText;

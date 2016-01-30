@@ -1,10 +1,1 @@
-{
-	"cardName" : "Meanotaur",
-	"manaCost" : "4",
-	"cardImage" : "meanator.jpg",
-	"type" : "creature",
-	"keywords" : "",
-	"abilityText" : "",
-	"attack" : "4",
-	"defence" : "4"
-}
+{"cardName":"Meanotaur","manaCost":4,"type":"creature","keywords":"","abilityText":"","attack":4,"defence":4}
