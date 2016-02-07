@@ -8,18 +8,28 @@ using UnityEngine.UI;
 
 public class PlayController : MonoBehaviour {
 
+    int startingLifeTotal;
+    int startingHandSize = 6;
+
     public string json;
 
     public Player player = new Player();
     public Player opponent = new Player(); 
 
     void Start () {
-        Draw(player, 6);
+        //construct decks
+
+        //set starting life totals
+        player.lifeTotal = startingLifeTotal;
+        opponent.lifeTotal = startingLifeTotal;
+
+        //draw opening hands
+        Draw(player, startingHandSize);
+        Draw(opponent, startingHandSize);
 	}
 	
-	// Update is called once per frame
 	void Update () {
-	    //Canvas.
+	    
 	}
 
     void Draw(Player playerDrawing, int cardsDrawn) {
