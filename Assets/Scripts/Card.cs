@@ -1,20 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[System.Serializable]
 public class Card : MonoBehaviour
 {
 
     public string cardName;
-    int manaCost;
+    public int manaCost;
+    //public Texture2D cardImage;
+    public string cardImage;
+    public string type;
+    public string keywords;
+    public string abilityText;
 
-    //Texture2D cardImage;
-    string cardImage;
-    string type;
-    string keywords;
-    string abilityText;
-
-    int attack;
-    int defence;
+    public int attack;
+    public int defence;
 
     void Awake() {
 

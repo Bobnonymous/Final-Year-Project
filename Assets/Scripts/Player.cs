@@ -21,8 +21,13 @@ public class Player : MonoBehaviour {
 	}
 
     
-    void Draw() {
-        cardsInHand.Add(cardsInDeck.Last());//maybe should be lastOrDefault?
-        cardsInDeck.RemoveAt(cardsInDeck.Count - 1);//removes the card from the deck and adds it to the hand
+    public void XDraw(int numberDrawn) {
+        //cardsInHand.Add(cardsInDeck.Last<Card>());//maybe should be lastOrDefault?
+        //cardsInDeck.RemoveAt(cardsInDeck.Count - 1);//removes the card from the deck and adds it to the hand
+    }
+
+    public Card Draw(int sumint)
+    {
+        return cardsInDeck.Last();
     }
 }
