@@ -5,15 +5,16 @@ using System.Linq;
 
 public class Player : MonoBehaviour {
 
+    public string playerName;
     public int lifeTotal;
 
-    List<string> deckList = new List<string>();
+    //List<string> deckList = new List<string>();
     public List<Card> cardsInDeck = new List<Card>();
     public List<Card> cardsInHand = new List<Card>();
     public List<Card> cardsInPlay = new List<Card>();
     
     void Start () {
-        //lifeTotal = 20;
+        
 	}
 	
 	void Update () {
@@ -21,13 +22,11 @@ public class Player : MonoBehaviour {
 	}
 
     
-    public void XDraw(int numberDrawn) {
-        //cardsInHand.Add(cardsInDeck.Last<Card>());//maybe should be lastOrDefault?
+    public void Draw(int numberDrawn) {
+        for(int i = 0; i < numberDrawn; i++) {
+            cardsInHand.Add(cardsInDeck.Last<Card>());
+            cardsInDeck.RemoveAt(cardsInDeck.Count - 1);
+        }
         //cardsInDeck.RemoveAt(cardsInDeck.Count - 1);//removes the card from the deck and adds it to the hand
-    }
-
-    public Card Draw(int sumint)
-    {
-        return cardsInDeck.Last();
     }
 }

@@ -8,7 +8,7 @@ public class demoClass {// : MonoBehaviour {
     public float timeElapsed;
     public string playerName;
 
-    // Use this for initialization
+    /* Use this for initialization
     void Start () {
 	
 	}
@@ -16,5 +16,5 @@ public class demoClass {// : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-	}
+	}*/
 }
